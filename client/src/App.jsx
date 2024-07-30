@@ -9,6 +9,7 @@ import FAQ from "./Pages/FAQ"
 import JoinUs from "./Pages/JoinUs"
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
+import About from './Pages/About'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" exact element={<Home/>} />
           <Route path="/event" exact element={<Event/>} />
           <Route path="/gallery" exact element={<Gallery/>} />
+          <Route path="/about" exact element={<About/>} />
           <Route path="/teams" exact element={<Team/>} />
           <Route path="/faq" exact element={<FAQ/>} />
           <Route path="/join" exact element={<JoinUs/>} />
