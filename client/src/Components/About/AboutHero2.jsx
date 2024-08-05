@@ -2,25 +2,35 @@ import React from "react";
 import { Box } from "@mui/material";
 import gdg from "../../assets/gdg.png";
 
-const AboutHero2 = () => {
+const AboutHero1 = () => {
   return (
     <Box>
-      <div class="lg:flex bg-gray-800 grid grid-cols-2">
-        <div class="flex items-center justify-center w-full px-6 py-8 lg:h-[32rem] ">
-          <div class="w-full h-64 lg:h-auto">
-            <img src={gdg} alt="" />
-          </div>
+      <div className="lg:flex bg-gray-800">
+        {/* Image Section */}
+        <div className="flex items-center justify-center w-full">
+          <img src={gdg} alt="GDG" className="object-contain" />
+        </div>
 
-          <div class="max-w-xl">
-            <h2 class="text-3xl font-semibold text-gray-800 lg:text-4xl">
-              Build Your New{" "}
-              <span class="text-blue-600 dark:text-blue-400">Idea</span>
+        {/* Text Section */}
+        <div className="flex items-center justify-center w-full px-6 py-8 lg:h-[32rem]">
+          <div className="max-w-xl">
+            <h2 className="text-3xl font-semibold text-white lg:text-4xl">
+              Google Developer Group Patna{" "}
+            </h2>
+            <hr className="my-6 border-gray-200 md:my-10 border-gray-700" />
+            <h2 className="text-xl font-semibold text-white lg:text-3xl">
+            The Community of Developers, For Developers, By Developers{" "}
             </h2>
 
-            <p class="mt-4 text-sm text-gray-500  lg:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Blanditiis commodi cum cupiditate ducimus, fugit harum id
-              necessitatibus odio quam quasi, quibusdam rem tempora voluptates.
+            <p className="mt-4 text-sm text-gray-500 lg:text-base">
+              When you join a Google Developer Group, you’ll have the
+              opportunity to meet local developers with similar interests in
+              technology. A GDG meetup event includes talks on a wide range of
+              technical topics where you can learn new skills through hands-on
+              workshops. The community prides itself on being an inclusive
+              environment where everyone and anyone interested in tech - from
+              beginner developers to experienced professionals - all are welcome
+              to join.
             </p>
           </div>
         </div>
@@ -29,4 +39,4 @@ const AboutHero2 = () => {
   );
 };
 
-export default AboutHero2;
+export default AboutHero1;

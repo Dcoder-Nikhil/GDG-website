@@ -4,26 +4,25 @@ import gdg from "../../assets/gdg.png";
 
 const AboutHero1 = () => {
   return (
-    <Box>
-      <div class="lg:flex bg-gray-800 grid grid-cols-2">
+    <Box className="bg-gray-800">
+      <div class="lg:flex  grid grid-cols-2">
         <div class="flex items-center justify-center w-full px-6 py-8 lg:h-[32rem] ">
           <div class="max-w-xl">
-            <h2 class="text-3xl font-semibold text-gray-800 lg:text-4xl">
-              Build Your New{" "}
-              <span class="text-blue-600 dark:text-blue-400">Idea</span>
-            </h2>
-
-            <p class="mt-4 text-sm text-gray-500  lg:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Blanditiis commodi cum cupiditate ducimus, fugit harum id
-              necessitatibus odio quam quasi, quibusdam rem tempora voluptates.
+            <p class="mt-4 text-lg text-gray-500  lg:text-xl">
+              Google Developer Group Patna is inspired by GDG Family . We
+              started our journey in Feb 2019 . We try to engage student
+              developers, fresh graduates and professionals through our hack
+              events & meetups. The motive is to create a local ecosystem of
+              programmers & developers in and around patna. The technology
+              awareness is main goal for first few years of the group.
             </p>
           </div>
         </div>
-        <div class="w-full h-64 lg:h-auto">
-          <img src={gdg} alt="" />
+        <div className="flex items-center justify-center w-full">
+          <img src={gdg} alt="GDG" className="object-contain" />
         </div>
       </div>
+      
     </Box>
   );
 };

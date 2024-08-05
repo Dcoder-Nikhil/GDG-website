@@ -67,9 +67,10 @@ const FAQHero = () => {
                   home page. and if you aren't from Bihar then find the nearest
                   GDG in your location at GDG Community Page
                 </p>
-                <a href="https://gdg.community.dev/" 
-                className="text-white border border-black text-black rounded-lg mt-4 p-2">
-                  Click Here to Visit
+                <a href="https://gdg.community.dev/">
+                  <p className=" text-white border border-blackrounded-lg mt-4 p-2text-black">
+                    Click Here to Visit
+                  </p>
                 </a>
               </div>
             </div>
