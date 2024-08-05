@@ -4,8 +4,8 @@ import gdg from "../../assets/gdg.png";
 
 const AboutHero1 = () => {
   return (
-    <Box>
-      <div className="lg:flex bg-gray-800">
+    <Box className="bg-gray-800">
+      <div className="lg:flex">
         {/* Image Section */}
         <div className="flex items-center justify-center w-full">
           <img src={gdg} alt="GDG" className="object-contain" />
@@ -19,7 +19,7 @@ const AboutHero1 = () => {
             </h2>
             <hr className="my-6 border-gray-200 md:my-10 border-gray-700" />
             <h2 className="text-xl font-semibold text-white lg:text-3xl">
-            The Community of Developers, For Developers, By Developers{" "}
+              The Community of Developers, For Developers, By Developers{" "}
             </h2>
 
             <p className="mt-4 text-sm text-gray-500 lg:text-base">

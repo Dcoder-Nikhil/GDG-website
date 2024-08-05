@@ -22,6 +22,11 @@ const AboutHero1 = () => {
           <img src={gdg} alt="GDG" className="object-contain" />
         </div>
       </div>
+      <p className="font-mono text-2xl px-24 text-white">
+        Disclaimer: GDG Patna is an independent group; our activities and the
+        opinions expressed here should in no way be linked to Google, the
+        corporation.
+      </p>
     </Box>
   );
 };
