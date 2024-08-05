@@ -22,7 +22,6 @@ const AboutHero1 = () => {
           <img src={gdg} alt="GDG" className="object-contain" />
         </div>
       </div>
-      
     </Box>
   );
 };
