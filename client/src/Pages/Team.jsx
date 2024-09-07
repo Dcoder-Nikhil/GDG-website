@@ -6,6 +6,7 @@ const Team = () => {
   return (
     <Box>
       <TeamHeader />
+      {/* <TeamCard /> */}
     </Box>
   )
 }

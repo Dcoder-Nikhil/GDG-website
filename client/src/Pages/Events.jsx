@@ -1,8 +1,12 @@
 import React from 'react'
+import EventHeader from '../Components/Event/EventHeader'
+import { Box } from '@mui/material'
 
 const Events = () => {
   return (
-    <div>Events</div>
+    <Box>
+      <EventHeader />
+    </Box>
   )
 }
 
