@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroHome = () => {
   return (
-    <Box className="bg-gray-900">
+    <Box className="bg-gradient-to-r from-blue-900 to-purple-900">
       <div className="container flex flex-col px-14 py-8 mx-auto space-y-6 lg:h-[32rem] lg:py-10 lg:flex-row lg:items-center">
         <div className="w-full lg:w-1/2">
           <div className="lg:max-w-lg">

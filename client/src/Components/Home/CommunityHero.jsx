@@ -1,30 +1,87 @@
-import { Box } from "@mui/material";
+import Button from "@mui/material/Button"; // MUI Button
+import { Card, CardContent, Typography } from "@mui/material";
 import React from "react";
 
 const CommunityHero = () => {
+  const events = [
+    {
+      title: "DevFest",
+      description:
+        "Meet local developers and technologists. All are welcome, including those with diverse backgrounds and from various companies and industries.",
+      image: "path-to-your-image", // Replace with correct path to images
+    },
+    {
+      title: "I/O Extended",
+      description:
+        "Google I/O connects developers from around the world for thoughtful discussions, hands-on learning with Google experts, and a first look at Google’s latest developer products.",
+      image: "path-to-your-image", // Replace with correct path to images
+    },
+    {
+      title: "And Many More",
+      description: "Check out all upcoming events!",
+      image: "path-to-your-image", // Replace with correct path to images
+    },
+  ];
+
   return (
-    <Box className="bg-gray-900">
-      <div className="container flex flex-col px-14 py-8 mx-auto space-y-6 lg:h-[32rem] lg:py-10 lg:flex-row lg:items-center">
-        <div className="w-full lg:w-1/2">
-          <div className="lg:max-w-lg">
-            <h1 className="text-lg font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">
+    <div className="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-16">
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-8">
+          {/* Left Section */}
+          <div className="space-y-4">
+            <Typography
+              variant="h4"
+              component="h2"
+              className="text-3xl font-bold"
+            >
               Our Community Events
-            </h1>
-            <div>
-              <hr className="border-white md:mt-8 border-gray-700" />
-              <p className="text-white py-4">
-                Our events are open to newbies, developers, managers, and
-                organizations who are interested in Google's technologies or use
-                them as part of their projects.
-              </p>
-              <p className="text-white">About different Google technologies</p>
-            </div>
+            </Typography>
+            <Typography variant="body1" className="text-lg">
+              Our events are open to newbies, developers, managers, and
+              organizations who are interested in Google’s technologies or use
+              them as part of their projects.
+            </Typography>
+            <Typography variant="body1" className="text-lg">
+              About different Google technologies
+            </Typography>
+            <Button
+              variant="outlined"
+              className="text-white border-white hover:bg-white hover:text-blue-900"
+            >
+              See Events
+            </Button>
+          </div>
+
+          {/* Right Section: Event Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {events.map((event, index) => (
+              <Card
+                key={index}
+                className="bg-white text-black rounded-md shadow-md"
+              >
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  className="w-full h-32 object-cover"
+                />
+                <CardContent>
+                  <Typography
+                    variant="h5"
+                    component="h3"
+                    className="font-semibold"
+                  >
+                    {event.title}
+                  </Typography>
+                  <Typography variant="body2" className="mt-2 text-gray-700">
+                    {event.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
-
-        <div className="flex items-center justify-center w-full h-96 lg:w-1/2"></div>
       </div>
-    </Box>
+    </div>
   );
 };
 
